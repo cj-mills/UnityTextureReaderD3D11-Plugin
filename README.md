@@ -1,6 +1,6 @@
 # UnityTextureReaderD3D11-Plugin
 
-This repository contains the source code for the UnityTextureReaderD3D11 plugin, a native plugin for Unity that enables efficient pixel data reading from Direct3D11 textures.
+This repository contains the Visual Studio project for the UnityTextureReaderD3D11 plugin, a native plugin for Unity that enables efficient pixel data reading from Direct3D11 textures.
 
 
 
