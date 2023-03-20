@@ -24,7 +24,7 @@ The plugin is designed to work with the [UnityTextureReaderD3D](https://github.c
 1. Clone this repository to your local machine.
 2. Open the `UnityTextureReaderD3D11.sln` solution file in Visual Studio.
 3. In the Solution Explorer, right-click on the project and go to **Properties**.
-4. In the **C/C++** tab, click on **General** and add the path to the `Editor\Data\PluginAPI` subfolder for your Unity Editor installation to the **Additional Include Directories**. The path should look like `C:\Program Files\Unity\Editor\Data\PluginAPI`.
+4. In the **C/C++** tab, add the path to the `Editor\Data\PluginAPI` subfolder for your Unity Editor installation to the **Additional Include Directories**. The path should look like `C:\Program Files\Unity\Editor\Data\PluginAPI`.
 5. Save the changes and close the Properties window.
 6. Set the build configuration to **Release** and platform to **x64**.
 7. Build the solution by pressing **Ctrl+Shift+B** or going to **Build > Build Solution**.
