@@ -1,6 +1,8 @@
 # UnityTextureReaderD3D11-Plugin
 
-This repository contains the Visual Studio project for the UnityTextureReaderD3D11 plugin, a native plugin for Unity that enables efficient access to pixel data from Direct3D11 textures in Unity.
+This repository contains the source code for the UnityTextureReaderD3D11 plugin, a native plugin for Unity that enables efficient pixel data reading from Direct3D11 textures.
+
+
 
 ## Overview
 
@@ -8,20 +10,34 @@ The UnityTextureReaderD3D11 plugin allows you to efficiently read pixel data fro
 
 The plugin is designed to work with the [UnityTextureReaderD3D](https://github.com/cj-mills/UnityTextureReaderD3D) package, which provides a higher-level C# interface for Unity projects.
 
+
+
+## Prerequisites
+
+- Visual Studio 2019 or newer.
+- A Unity installation with DirectX 11 support.
+
+
+
 ## Building the plugin
 
-To build the UnityTextureReaderD3D11 plugin, you will need Visual Studio with support for C++ and the Windows SDK installed. Follow these steps:
+1. Clone this repository to your local machine.
+2. Open the `UnityTextureReaderD3D11.sln` solution file in Visual Studio.
+3. In the Solution Explorer, right-click on the project and go to **Properties**.
+4. In the **C/C++** tab, click on **General** and add the path to the `Editor\Data\PluginAPI` subfolder for your Unity Editor installation to the **Additional Include Directories**. The path should look like `C:\Program Files\Unity\Editor\Data\PluginAPI`.
+5. Save the changes and close the Properties window.
+6. Set the build configuration to **Release** and platform to **x64**.
+7. Build the solution by pressing **Ctrl+Shift+B** or going to **Build > Build Solution**.
 
-1. Clone or download this repository.
-2. Open the Visual Studio solution file (`UnityTextureReaderD3D11.sln`) in Visual Studio.
-3. Select the desired build configuration (e.g., Debug or Release) and platform (e.g., x64).
-4. Build the solution by pressing `Ctrl+Shift+B` or selecting `Build > Build Solution` from the menu.
+After building the solution, you will find the `UnityTextureReaderD3D11.dll` file in the `x64\Release` folder.
 
-Upon successful build, you will find the `UnityTextureReaderD3D11.dll` file in the output folder (e.g., `x64/Release` or `x64/Debug`).
+
 
 ## Usage
 
-To use the UnityTextureReaderD3D11 plugin in your Unity project, follow the instructions in the [UnityTextureReaderD3D](https://github.com/yourusername/UnityTextureReaderD3D) package repository.
+To use the UnityTextureReaderD3D11 plugin in your Unity project, copy the `UnityTextureReaderD3D11.dll` file to your Unity project's `Assets/Plugins/x86_64` folder or follow the instructions in the [UnityTextureReaderD3D](https://github.com/cj-mills/UnityTextureReaderD3D) package repository.
+
+
 
 ## License
 
